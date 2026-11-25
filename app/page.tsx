@@ -1,5 +1,9 @@
-import { TaskBoard } from '@/components/TaskBoard';
-import { TasksProvider } from '@/context/TasksContext';
+import { TaskBoard } from "@/components/TaskBoard";
+import { TasksProvider } from "@/context/TasksContext";
 export default function HomePage() {
-  return <TasksProvider><TaskBoard /></TasksProvider>;
+  return (
+    <TasksProvider>
+      <TaskBoard />
+    </TasksProvider>
+  );
 }
